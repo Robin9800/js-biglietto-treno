@@ -6,6 +6,11 @@ let sconto;
 
 
 
+if (!isNaN(kmNum) && !isNaN(ageUser)){
+
+}else{
+    alert('Hai inserito valori non numerici');
+}
 
 if (ageUser < 18){
     sconto = (totale *0.2);
@@ -20,7 +25,7 @@ else{
 let finalPrice = (totale-sconto);
 console.log('Il prezzo finale è ' + finalPrice + '€');
 
-document.getElementById('total').innerHTML = 'Il prezzo finale è ' + finalPrice + '€';
+document.getElementById('total').innerHTML = 'Il prezzo finale è ' + finalPrice.toFixed(2) + '€';
 
 
      
