@@ -12,6 +12,7 @@ if (!isNaN(kmNum) && !isNaN(ageUser)){
     alert('Hai inserito valori non numerici');
 }
 
+/*Se hai meno di 18 anni hai uno sconto del 20%, se hai più di 65 anni hai uno sconto del 40%*/
 if (ageUser < 18){
     sconto = (totale *0.2);
 
